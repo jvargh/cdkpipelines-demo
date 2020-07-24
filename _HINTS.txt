@@ -9,3 +9,10 @@ npx cdk bootstrap \
 npx cdk deploy \
   CdkpipelinesDemoPipelineStack
 
+
+npx cdk bootstrap \
+  --profile lz \
+  --trust 524517701320 \
+  --cloudformation-execution-policies arn:aws:iam::aws:policy/AdministratorAccess \
+  aws://149588228975/us-east-1
+
