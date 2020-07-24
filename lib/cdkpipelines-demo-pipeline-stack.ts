@@ -44,7 +44,7 @@ export class CdkpipelinesDemoPipelineStack extends Stack {
     //   env: { account: '524517701320', region: 'us-east-1' }
     // }));
 
-    // NEW
+    // Pre-Prod deploy and test
     const preprod = new CdkpipelinesDemoStage(this, 'PreProd', {
       env: { account: '524517701320', region: 'us-east-1' }
     });
