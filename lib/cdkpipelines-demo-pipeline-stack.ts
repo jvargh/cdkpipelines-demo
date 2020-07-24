@@ -50,7 +50,7 @@ export class CdkpipelinesDemoPipelineStack extends Stack {
     });
     const preprodStage = pipeline.addApplicationStage(preprod);
     preprodStage.addActions(new ShellScriptAction({
-      actionName: 'TestService',
+      actionName: 'TestService' ,
       useOutputs: {
         // Get the stack Output from the Stage and make it available in
         // the shell script as $ENDPOINT_URL.
