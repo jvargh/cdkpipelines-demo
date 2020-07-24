@@ -1,0 +1,11 @@
+aws secretsmanager get-secret-value --secret-id github-token
+
+
+npx cdk bootstrap \
+  --cloudformation-execution-policies arn:aws:iam::aws:policy/AdministratorAccess \
+  aws://524517701320/us-east-1
+
+
+npx cdk deploy \
+  CdkpipelinesDemoPipelineStack
+
